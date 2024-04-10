@@ -24,9 +24,9 @@ function opts.init()
 	opt.hlsearch = true
 	opt.incsearch = true
 
-	opt.tabstop = 8
-	opt.shiftwidth = 8
-	opt.softtabstop = 0
+	opt.tabstop = 4
+	opt.shiftwidth = 4
+	opt.softtabstop = 4
 
 	opt.swapfile = false -- Disable swap file
 	opt.clipboard = "unnamedplus" -- Use system clipboard
