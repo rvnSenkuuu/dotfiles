@@ -25,7 +25,7 @@ function keys.init()
 	keymap.set("n", "<S-k>", "<CMD>+tabmove<CR>", {desc = "Move tab to the right", silent = true})
 	--Move line
 	keymap.set("v", "J", ":m '>+1<CR>gv=gv", {desc = "Move line up", silent = true})
-	keymap.set("v", "K", ":m '>-1<CR>gv=gv", {desc = "Move line down", silent = true})
+	keymap.set("v", "K", ":m '<-2<CR>gv=gv", {desc = "Move line down", silent = true})
 end
 
 return keys
