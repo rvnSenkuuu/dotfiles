@@ -101,6 +101,7 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias vim="nvim"
 alias cat="bat"
+alias c42="cc -Wall -Werror -Wextra"
 
 # Created by `pipx` on 2024-04-06 18:10:55
 export PATH="$PATH:/home/senku/.local/bin"
