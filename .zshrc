@@ -105,7 +105,6 @@ source $ZSH/oh-my-zsh.sh
 alias vim="nvim"
 alias cat="bat"
 alias c42="cc -Wall -Werror -Wextra"
-alias code="codium"
 
 # Created by `pipx` on 2024-04-06 18:10:55
 export PATH="$PATH:/home/senku/.local/bin"
