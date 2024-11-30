@@ -91,6 +91,14 @@ source $ZSH/oh-my-zsh.sh
 #   export EDITOR='mvim'
 # fi
 
+# Define a function to handle the task, then optionally alias it if desired
+
+create_and_header() {
+    for file in "$@"; do
+        touch "$file"
+        vim -c "Stdheader" -c "wq" "$file"
+    done
+}
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
@@ -105,6 +113,8 @@ source $ZSH/oh-my-zsh.sh
 alias vim="nvim"
 alias cat="bat"
 alias c42="cc -Wall -Werror -Wextra"
+alias hfile='for f in "$@"; do touch "$f"; vim -c "Stdheader" -c "wq" "$f"; done'
+alias hfile='create_and_header'
 
 # Created by `pipx` on 2024-04-06 18:10:55
 export PATH="$PATH:/home/senku/.local/bin"
