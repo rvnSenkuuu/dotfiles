@@ -91,7 +91,8 @@ source $ZSH/oh-my-zsh.sh
 #   export EDITOR='mvim'
 # fi
 
-# Define a function to handle the task, then optionally alias it if desired
+# Compilation flags
+# export ARCHFLAGS="-arch x86_64"
 
 create_and_header() {
     for file in "$@"; do
@@ -99,8 +100,6 @@ create_and_header() {
         vim -c "Stdheader" -c "wq" "$file"
     done
 }
-# Compilation flags
-# export ARCHFLAGS="-arch x86_64"
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
