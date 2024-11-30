@@ -112,7 +112,6 @@ create_and_header() {
 alias vim="nvim"
 alias cat="bat"
 alias c42="cc -Wall -Werror -Wextra"
-alias hfile='for f in "$@"; do touch "$f"; vim -c "Stdheader" -c "wq" "$f"; done'
 alias hfile='create_and_header'
 
 # Created by `pipx` on 2024-04-06 18:10:55
